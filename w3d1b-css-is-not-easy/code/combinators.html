@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+
+      /* descendant */
+      .wrap p { color: blue; }
+
+      /* direct child */
+      .wrap > p { color: red; }
+
+      /* adjacent (immediate following) sibling */
+      .item + p { color: yellow; }
+
+      /* general sibling */
+      .item ~ p { color: pink; }
+
+    </style>
+  </head>
+  <body>
+    <h1>Selector Combinators</h1>
+    
+    <div class="wrap">
+      
+      <p>Paragraph 1</p>
+      
+      <span class="item">
+         <p>Paragraph 2</p>
+      </span>
+      
+      <p>Paragraph 3</p>
+      
+      <p>Paragraph 4</p>
+
+    </div>
+    
+  </body>
+</html>

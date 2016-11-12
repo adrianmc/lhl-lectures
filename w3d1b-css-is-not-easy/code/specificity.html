@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+
+      /* 100 */
+      #test { background: red }
+
+      /* 10 + 1 = 11 */
+      .item p { background: orange }
+
+      /* 1 */
+      p { background: green }
+
+      /* 1 + 100 + 1 = 102 */
+      body #wrap p { background: yellow }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Specificity</h1>
+
+    <div id="wrap">
+      <p>Paragraph 1</p>
+    </div>
+
+    <div class="item">
+      <p id="test">Paragraph 2</p>
+    </div>
+
+    <div class="item">
+      <p>Paragraph 3</p>
+    </div>
+
+    <div>
+      <p>Paragraph 4</p>
+    </div>
+
+    <p>Paragraph 5</p>
+
+  </body>
+</html>
