@@ -216,7 +216,7 @@ It is automatically added to any object we insert and we can use it to find sing
 
 ## MongoDB in a Node.js App
 
-The app is in the `/code` folder, so first we should navigate to it: `cd code`. Now we are ready to being:
+The app is in the `/code` folder, so first we should navigate to it: `cd code`. Now we are ready to start:
 
 1. Install the packages: `npm install`
 2. Create an empty directory called data: `mkdir data`
