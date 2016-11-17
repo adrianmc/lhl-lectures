@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <a href="/todos/new">New Todo</a>
+  <hr>
+
+  <table>
+    <% for (todo of todos) { %>
+      <tr>
+        
+        <!-- Task Description -->
+        <td><strong><%= todo.desc %></strong></td>
+
+        <!-- Task Status -->
+        <td><%= todo.completed ? 'Completed' : 'Incomplete' %></td>
+        
+        <!-- Edit Link -->
+        <td><a href="/todos/<%= todo._id %>/edit">Edit</a></td>
+
+        <!-- Delete Button -->
+        <td>
+          <form action="/todos/<%= todo._id %>?_method=DELETE" method="POST">
+            <button>Delete</button>
+          </form>
+        </td>
+
+      </tr>
+    <% } %>
+  </table>
+
+</body>
+</html>
