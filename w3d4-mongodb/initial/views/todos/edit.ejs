@@ -1,0 +1,25 @@
+<html>
+<body>
+
+  <h2>Edit TODO</h2>
+  <form action="/todos/<%= todo._id %>?_method=PUT" method="post">
+    
+    <label for="name">Description:</label>
+    
+    <!-- Description Input Textbox -->
+    <input name="desc" type="text" value="<%= todo.desc %>">
+
+    <!-- Completed Checkbox -->
+    <input
+      name="completed"
+      type="checkbox"
+      <%= todo.completed ? 'checked' : '' %>
+    >
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>

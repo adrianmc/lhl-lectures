@@ -20,7 +20,6 @@ The code discussed in class can be found in [`/code`](code).
   - Primary Key
 
 - MongoDB in a Node.js App
-  - 
 
 ## Methods of Data Storage
 
@@ -222,4 +221,3 @@ The app is in the `/code` folder, so first we should navigate to it: `cd code`. 
 2. Create an empty directory called data: `mkdir data`
 3. Start the MongoDB database in the folder: `mongod --dbpath data`
 4. Start the server with the NPM script (this basically runs `app.js`): `npm start`
-
